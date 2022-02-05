@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+* {
+  transition: all 0.3s ease-in-out; }
+
+body {
+  background-color: #1D2C35;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  color: white;
+  font-family: sans-serif; }
+
+section {
+  background-color: #973F3F;
+  height: 400px;
+  width: 325px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.25); }
+
+.graph-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  gap: 16px; }
+
+.graph {
+  background-color: red;
+  width: 220px;
+  height: 220px; }
+
+.legend ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; }
+
+.legend li {
+  list-style: none;
+  display: flex;
+  align-items: center; }
+  .legend li p {
+    padding-left: 8px;
+    font-size: 12px; }
+  .legend li:before {
+    content: '';
+    height: 16px;
+    width: 16px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.5); }
+
+.legend li:nth-child(1):before {
+  background-color: #8E6017; }
+
+.legend li:nth-child(2):before {
+  background-color: #4F9419; }
+
+.legend li:nth-child(3):before {
+  background-color: #5B7C98; }
+
+.legend li:nth-child(4):before {
+  background-color: #823F97; }
