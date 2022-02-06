@@ -30,9 +30,45 @@ section {
   gap: 16px; }
 
 .graph {
-  background-color: red;
   width: 220px;
-  height: 220px; }
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .graph > div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: bottom center; }
+    .graph > div:nth-child(1) {
+      transform: rotate(0deg); }
+    .graph > div:nth-child(2) {
+      transform: rotate(45deg); }
+    .graph > div:nth-child(3) {
+      transform: rotate(90deg); }
+    .graph > div svg:nth-child(1) {
+      transform: scale(3); }
+      .graph > div svg:nth-child(1) path {
+        fill: #823F97; }
+    .graph > div svg:nth-child(2) {
+      transform: scale(2); }
+      .graph > div svg:nth-child(2) path {
+        fill: #5B7C98; }
+    .graph > div svg:nth-child(3) {
+      transform: scale(1); }
+      .graph > div svg:nth-child(3) path {
+        fill: #4F9419; }
+    .graph > div svg:nth-child(4) {
+      transform: scale(0.5); }
+      .graph > div svg:nth-child(4) path {
+        fill: #8E6017; }
+
+svg {
+  position: absolute;
+  bottom: 0;
+  transform: scale(2);
+  transform-origin: bottom center; }
 
 .legend ul {
   display: flex;
